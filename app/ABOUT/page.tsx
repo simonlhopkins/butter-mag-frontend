@@ -10,6 +10,7 @@ export default async function Page() {
       <h1>ABOUT</h1>
       {aboutPage.AboutRows.map((item, i) => (
         <div
+          key={item.title}
           className={clsx(
             styles.aboutRowContainer,
             i % 2 == 0 && styles.switch

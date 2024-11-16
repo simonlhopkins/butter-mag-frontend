@@ -28,7 +28,7 @@ export default async function Page({ params }: CategoryPageProps) {
     <div>
       <h1>Category: {params.articleCatagory}</h1>
       {articlesInCategory.map((item) => (
-        <SideBySideArticle data-aos="fade-right" article={item} />
+        <SideBySideArticle key={item.id} data-aos="fade-right" article={item} />
       ))}
     </div>
   );

@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./header.module.css";
 
 import DropdownMenu from "./DropdownMenu";
 import StrapiClient from "@/scripts/StrapiClient";
 
 //todo, load this from the server,, or maybe not idgaf
-const labels = ["listen", "about", "contact", "support"];
 
 const HeaderDropdown = async () => {
   const articleCategories = await StrapiClient.GetArticleCatagories();

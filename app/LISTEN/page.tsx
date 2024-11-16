@@ -17,7 +17,7 @@ export default async function Page() {
       </p>
       <img src={partyImage.src}></img>
       {bites.butterBites.map((item) => (
-        <SpotifyPodcastRow url={item.url} />
+        <SpotifyPodcastRow key={item.url} url={item.url} />
       ))}
       <SpotifyPodcastRow url={"1SYDjwymTAVIIpJcu2y30K"} type="album" />
     </div>

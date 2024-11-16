@@ -8,7 +8,7 @@ const CatagoryNameAndDate = ({ article, ...props }: Props) => {
   return (
     <p {...props}>
       <span>{article.article_catagory.name}</span>
-      <span>//</span>
+      <span>{"//"}</span>
       <time dateTime={article.createdAt}>{formatDate(article.createdAt)}</time>
     </p>
   );

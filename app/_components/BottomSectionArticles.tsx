@@ -8,7 +8,11 @@ async function BottomSectionArticles() {
   return (
     <div className={styles.bottomSection}>
       {posts.map((article) => (
-        <SideBySideArticle data-aos="fade-right" article={article} />
+        <SideBySideArticle
+          key={article.id}
+          data-aos="fade-right"
+          article={article}
+        />
       ))}
     </div>
   );

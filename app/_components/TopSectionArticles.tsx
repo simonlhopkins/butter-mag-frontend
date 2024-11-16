@@ -21,6 +21,7 @@ async function TopSectionArticles() {
           <ArticleCard
             data-aos="zoom-in"
             article={article}
+            key={article.id}
             descriptionType="tagline"
           />
         ))}

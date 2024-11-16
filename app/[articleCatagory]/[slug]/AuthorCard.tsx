@@ -1,4 +1,4 @@
-import StrapiClient, { StrapiArticleAuthorType } from "@/scripts/StrapiClient";
+import { StrapiArticleAuthorType } from "@/scripts/StrapiClient";
 import CKContent from "@/SharedComponents/CKContent";
 import styles from "./article.module.css";
 

@@ -1,0 +1,54 @@
+.article {
+  font-size: 1.5rem;
+}
+
+/* Author Card */
+.authorCardWrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top: solid var(--primary);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.authorCard {
+  max-width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.headerImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.authorImage {
+  flex: 1;
+  min-width: 100px;
+}
+
+.authorDescription {
+  flex: 2;
+}
+
+.pronouns {
+  font-size: 1.1rem;
+}
+.pronouns {
+  font-size: 1.1rem;
+}
+.dateCatagory {
+  font-size: 0.85rem;
+}
+
+.content {
+  margin-top: 3rem;
+  max-width: 65ch;
+  line-height: 1.5;
+  margin: auto;
+  & p {
+    margin-bottom: 1.5rem;
+  }
+}

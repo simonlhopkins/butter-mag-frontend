@@ -1,0 +1,18 @@
+.aboutRowContainer {
+  display: flex;
+}
+
+.aboutRowLeft {
+  flex: 1;
+}
+.aboutRowRight {
+  flex: 1;
+}
+
+.switch {
+  flex-direction: row-reverse;
+}
+
+.aboutRowHeader {
+  color: red;
+}

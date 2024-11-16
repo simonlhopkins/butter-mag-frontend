@@ -1,0 +1,53 @@
+.ck-content {
+  overflow: hidden;
+  & .image-style-align-right {
+    float: right;
+  }
+  /* unfortunately we have to use !important here since it comes to us with an inline style for the width, so we must override it */
+  @media only screen and (max-width: 700px) {
+    & :global(.image-style-align-left) {
+      width: 100% !important;
+    }
+    & :global(.image-style-align-right) {
+      width: 100% !important;
+    }
+  }
+  & :global(.image-style-align-left) {
+    float: left;
+    margin-right: 1.5rem;
+  }
+  & :global(.image-style-align-right) {
+    float: right;
+    margin-left: 1.5rem;
+  }
+  & :global(.image_resized) {
+    height: auto;
+  }
+  & :global(.image_resized::after) {
+    content: "";
+    display: table; /* Creates a block formatting context */
+    clear: both; /* Clears the float */
+  }
+  & :global(.image_resized) img {
+    height: auto;
+  }
+  & img {
+    display: block;
+  }
+  & figcaption {
+    color: var(--primary);
+    font-size: 1rem;
+  }
+  & figure {
+    text-align: center;
+  }
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & iframe {
+    width: 500px;
+    max-width: 100%;
+    height: 400px;
+  }
+}

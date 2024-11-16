@@ -1,0 +1,57 @@
+@import "./aos.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #ffd830;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  color: var(--foreground);
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("/greenmesh.gif");
+  cursor: url("/cursor.png"), auto;
+}
+::selection {
+  background: var(--primary);
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

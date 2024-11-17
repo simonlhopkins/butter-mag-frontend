@@ -38,7 +38,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <div className={styles.article}>
-      <ClickImg />
+      {/* <ClickImg /> */}
       <div className={styles.headerImgContainer}>
         <img data-aos="zoom-in" src={article.header_image.url}></img>
       </div>

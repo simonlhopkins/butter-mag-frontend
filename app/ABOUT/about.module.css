@@ -1,9 +1,14 @@
 .aboutRowContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .aboutRowLeft {
   flex: 1;
+  display: flex;
+  align-items: center;
+  min-width: calc(min(400px, 100%));
+  padding: 1rem;
 }
 .aboutRowRight {
   flex: 1;

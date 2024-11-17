@@ -4,6 +4,7 @@ import styles from "./article.module.css";
 import CKContent from "@/SharedComponents/CKContent";
 import AuthorCard from "./AuthorCard";
 import CatagoryNameAndDate from "@/app/_components/CatagoryNameAndDate";
+import ClickImg from "./clickImg";
 
 interface ArticlePageProps {
   params: {
@@ -37,6 +38,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <div className={styles.article}>
+      <ClickImg />
       <div className={styles.headerImgContainer}>
         <img data-aos="zoom-in" src={article.header_image.url}></img>
       </div>

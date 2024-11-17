@@ -28,6 +28,10 @@ function CKContent({ htmlString, className }: Props) {
         console.log(domNode);
         return domNode;
       }
+      if (domNode instanceof Element && domNode.name === "img") {
+        console.log("hello");
+        console.log(domNode.attribs);
+      }
     },
   };
   return (
